@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowfan>
+<flowfan>
+<source netmask="255.255.255.255" port="9995" ip="192.168.1.1"/>
+<target port="9995" ip="10.6.56.15"/>
+<target port="9991" ip="172.18.4.60"/>
+<configText>blah1</configText>
+<source netmask="255.255.255.255" port="9995" ip="192.168.1.2"/>
+<target port="9995" ip="10.6.56.15"/>
+<target port="9991" ip="172.18.4.60"/>
+<configText>blah2</configText>
+</flowfan>
+<startup ports="9995"/>
+</flowfan>

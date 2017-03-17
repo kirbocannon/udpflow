@@ -4,8 +4,6 @@ import csv
 ffan_file = 'flowfan.xml'
 csv_file = 'hosts.csv'
 
-
-
 xml_open ='''<?xml version="1.0" encoding="UTF-8"?>
 <flowfan>
 <flowfan>'''
@@ -21,14 +19,6 @@ xml_close ='''
 <startup ports="9995"/>
 </flowfan>'''
 
-# host_list = [
-#
-#     {'host_ip': '192.168.1.1', 'desc': 'blah'},
-#     {'host_ip': '192.168.1.2', 'desc': 'naw'}
-#
-# ]
-
-
 def import_csv_data():
     '''Read data in CSV'''
     host_items = list()
@@ -43,9 +33,9 @@ def import_csv_data():
 
 
 if __name__ == '__main__':
-
+    # grab host info from csv
     host_list = import_csv_data()
-
+    # write data to xml
     with open(ffan_file, 'w+') as f:
         f.write(xml_open)
         pos = 0
